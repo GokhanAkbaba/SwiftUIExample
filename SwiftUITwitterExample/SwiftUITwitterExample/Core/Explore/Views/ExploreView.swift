@@ -9,7 +9,16 @@ import SwiftUI
 
 struct ExploreView: View {
     var body: some View {
-        Text("Explore View")
+        VStack{
+            ScrollView{
+                LazyVStack{
+                    ForEach( 0 ... 25, id: \.self) { _ in
+                        UserRowView()
+                        
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664FF11927DFD3E50064369C /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FF11827DFD3E50064369C /* SideMenuView.swift */; };
+		664FF11B27DFD4010064369C /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FF11A27DFD4010064369C /* SideMenuRowView.swift */; };
+		664FF11D27DFD4300064369C /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FF11C27DFD4300064369C /* SideMenuViewModel.swift */; };
+		664FF11F27DFD6830064369C /* UsersStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FF11E27DFD6830064369C /* UsersStatsView.swift */; };
 		66B4E18127D6BD890013584D /* SwiftUITwitterExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4E18027D6BD890013584D /* SwiftUITwitterExampleApp.swift */; };
 		66B4E18327D6BD890013584D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4E18227D6BD890013584D /* ContentView.swift */; };
 		66B4E18527D6BD8C0013584D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B4E18427D6BD8C0013584D /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		664FF11827DFD3E50064369C /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		664FF11A27DFD4010064369C /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		664FF11C27DFD4300064369C /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		664FF11E27DFD6830064369C /* UsersStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersStatsView.swift; sourceTree = "<group>"; };
 		66B4E17D27D6BD890013584D /* SwiftUITwitterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITwitterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4E18027D6BD890013584D /* SwiftUITwitterExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITwitterExampleApp.swift; sourceTree = "<group>"; };
 		66B4E18227D6BD890013584D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		664FF11527DFD39F0064369C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				664FF11727DFD3B40064369C /* View */,
+				664FF11627DFD3AB0064369C /* ViewModel */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		664FF11627DFD3AB0064369C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				664FF11C27DFD4300064369C /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		664FF11727DFD3B40064369C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				664FF11827DFD3E50064369C /* SideMenuView.swift */,
+				664FF11A27DFD4010064369C /* SideMenuRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		66B4E17427D6BD890013584D = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +126,7 @@
 		66B4E18E27D6BDDA0013584D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				664FF11527DFD39F0064369C /* SideMenu */,
 				66EB0B6A27D8023200FC79F9 /* Profile */,
 				66EB0B6927D8021D00FC79F9 /* Messages */,
 				66EB0B6827D8021000FC79F9 /* Notifications */,
@@ -242,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				66EB0B7A27D94E1B00FC79F9 /* UserRowView.swift */,
+				664FF11E27DFD6830064369C /* UsersStatsView.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -319,11 +355,15 @@
 				66EB0B7027D802CE00FC79F9 /* MessagesView.swift in Sources */,
 				66EB0B7427D8042100FC79F9 /* ProfileView.swift in Sources */,
 				66B4E18327D6BD890013584D /* ContentView.swift in Sources */,
+				664FF11B27DFD4010064369C /* SideMenuRowView.swift in Sources */,
 				66B4E19A27D7B7930013584D /* TweetRowView.swift in Sources */,
+				664FF11F27DFD6830064369C /* UsersStatsView.swift in Sources */,
 				66EB0B7627D940EE00FC79F9 /* TweetFilterViewModel.swift in Sources */,
 				66B4E19727D6BED70013584D /* FeedView.swift in Sources */,
+				664FF11927DFD3E50064369C /* SideMenuView.swift in Sources */,
 				66B4E18127D6BD890013584D /* SwiftUITwitterExampleApp.swift in Sources */,
 				66EB0B6C27D8026900FC79F9 /* ExploreView.swift in Sources */,
+				664FF11D27DFD4300064369C /* SideMenuViewModel.swift in Sources */,
 				66EB0B7B27D94E1B00FC79F9 /* UserRowView.swift in Sources */,
 				66EB0B6627D800E300FC79F9 /* MainTabView.swift in Sources */,
 				66EB0B6E27D8029E00FC79F9 /* NotificationsView.swift in Sources */,

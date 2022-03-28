@@ -40,7 +40,7 @@ struct RegistrationView: View {
             Spacer()
             
             Button {
-                presentationMode.wrappedValue.dismiss() 
+                presentationMode.wrappedValue.dismiss()
             } label: {
                 HStack{
                     Text("Already have an account")

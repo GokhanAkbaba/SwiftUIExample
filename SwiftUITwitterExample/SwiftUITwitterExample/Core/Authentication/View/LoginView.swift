@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email=""
     @State private var password = ""
+    @Environment var viewModel: AuthenticationViewModel
     var body: some View {
         VStack{
             AuthenticationHeaderView(title1: "Hello", title2: "Welcome Back")

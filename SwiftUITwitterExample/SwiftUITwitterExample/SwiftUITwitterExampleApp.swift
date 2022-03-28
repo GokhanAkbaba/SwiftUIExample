@@ -10,15 +10,15 @@ import Firebase
 
 @main
 struct SwiftUITwitterExampleApp: App {
-    
+    @StateObject var viewModel = AuthenticationViewModel()
     init(){
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                //ContentView()
-                LoginView()
+                ContentView()
+                    .environmentObject(viewModel)
         }
     }
 }
